@@ -1,0 +1,45 @@
+{
+    "name": "tyhpdef/pragmarx-google2fa-qrcode-impl",
+    "description": "Implementation package for tyhpdef/pragmarx-google2fa-qrcode. Require tyhpdef/pragmarx-google2fa-qrcode, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "4.0.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/pragmarx-google2fa": "@dev",
+                "tyhpdef/chillerlan-php-qrcode": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/pragmarx-google2fa-qrcode"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "pragmarx/google2fa-qrcode": "4.0.0"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/pragmarx-google2fa": "@dev",
+        "tyhpdef/chillerlan-php-qrcode": "@dev"
+    }
+}
